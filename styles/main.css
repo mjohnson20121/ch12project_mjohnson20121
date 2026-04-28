@@ -1,0 +1,126 @@
+/* Michael Johnson
+     04/24/2026
+     Project: Searching a Databse with PHP and MySQL
+     results.php
+*/
+
+/* Center everything on both pages */ 
+body {
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Container for index.php */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Center the form content */
+#email_input {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+}
+
+
+label[for="s_email"] {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+input[type="submit"] {
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Style the email input field */
+input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+
+
+/* Center everything vertically and horizontally on results.php */
+body > h1, 
+body > div, 
+body > a {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body h1 {
+    font-size: 40px; 
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+.message {
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.message p {
+    font-size: 35px; 
+    margin: 40px 0;
+    line-height: 1.4;
+}
+
+/* Style the return link */
+body > a {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 35px;  
+    text-decoration: none;
+    color: #0066cc;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body > a:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0;
+}
+
+/* Ensure the entire results page stacks vertically */
+body {
+    flex-direction: column;
+}
+
+/* Make sure the output doesn't wrap awkwardly */
+.message p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
